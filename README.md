@@ -93,6 +93,10 @@ Unsupported inputs:
 
 See `DEPLOY.md`. The page is static, so `.bead` upload and SVG download work from GitHub Pages through browser APIs.
 
+## Roadmap
+
+See `ROADMAP.md` for planned improvements, including configurable bead orientation, a standard 5/6 letter library, and text-to-pattern generation.
+
 ## Patterns
 
 - `patterns/chicago-marathon-26_2.md`: Chicago colors, red star, `26.2`, red star, Chicago colors.

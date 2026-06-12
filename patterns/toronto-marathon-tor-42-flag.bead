@@ -1,0 +1,54 @@
+# bead-pattern v1
+title: Toronto Marathon TOR 42 Flag
+heights: 8
+align: center
+orientation: vertical
+
+palette:
+B = #274490 Toronto blue
+W = #f8fafc white
+R = #f00 Toronto red
+
+pattern:
+01 | W B B B B B B B | TOR left edge
+02 | W B B B B B B B | TOR left edge
+03 | W W W W W W W W | TOR left edge
+04 | W B B B B B B B | TOR left edge
+05 | B W W W W W W B | TOR left edge
+06 | W B B B B B B W | TOR left edge
+07 | W B B B B B B W | TOR left edge
+08 | B W W W W W W B | TOR left edge
+09 | W W W W W W W W | O left edge
+10 | W B B W B B B B | O body
+11 | W B B W W B W B | O body
+12 | B W W B B W B W | O body
+13 | B B B B B B B B | R left edge
+14 | B B B B B B B B | R left edge
+15 | B B B B B B B B | R left edge
+16 | B B B B B B B B | R left edge
+17 | B B B B B B B B | R left edge
+18 | W W W W W W W W | spacer before flag
+19 | W W W W W W W W | flag blue border
+20 | W W W W W W W W | flag blue border
+21 | W W W R R W W W | flag leaf
+22 | W W R R R R W W | flag leaf
+23 | W W R R R R W W | flag leaf
+24 | W W R R R R W W | flag leaf
+25 | W W W R R W W W | flag leaf
+26 | W W W W W W W W | flag blue border
+27 | W W W W W W W W | flag blue border
+28 | W W W W W W W W | flag blue border
+29 | B B B B B B B B | spacer after flag
+30 | B B B B B B B B | spacer after flag
+31 | B B B B B B B B | spacer after flag
+32 | B B B B B B B B | spacer after flag
+33 | B B B B B B B B | spacer after flag
+34 | W W W W B B W W | 4 left edge
+35 | W B B W B B W W | 4 body
+36 | B B B W B B W W | 4 body
+37 | W W W W W W W W | 4 base
+38 | B B B B B B B B | spacer before 2
+39 | W W W W W W B B | 2 top
+40 | W B B W W B W W | 2 body
+41 | W B B B B W W W | 2 body
+42 | W W W W W W W W | 2 base

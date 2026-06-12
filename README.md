@@ -103,6 +103,7 @@ See `ROADMAP.md` for planned improvements, including configurable bead orientati
 - `patterns/chicago-marathon-26_2.md`: Chicago colors, red star, `26.2`, red star, Chicago colors.
 - `patterns/chicago-marathon-26_2.bead`: editable source format for the local preview tool.
 - `patterns/chicago-marathon-chi_26-flag.bead`: 85-column, 6/5 alternating Chicago flag-inspired version with four red stars and `CHI.26`.
+- `patterns/toronto-marathon-tor-42-flag.bead`: constant-8 Toronto Marathon version with `TOR`, a Toronto flag center block, and `42`.
 
 ## Notes
 

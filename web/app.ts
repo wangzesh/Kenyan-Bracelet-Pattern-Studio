@@ -296,7 +296,9 @@ function parsePattern(text: string): ParsedPattern {
 
   const heights = parseHeights(meta.get("heights") || meta.get("height") || "6,5", issues);
   const align = parseAlign(meta.get("align") || "center", issues);
-  const orientation = parseOrientation(meta.get("orientation") || "alternating", issues);
+  const orientation = meta.has("orientation")
+    ? parseOrientation(meta.get("orientation") || "", issues)
+    : defaultOrientation(heights);
 
   if (palette.length === 0) {
     issues.push({ level: "error", message: "Palette is empty." });
@@ -445,6 +447,11 @@ function parseOrientation(value: string, issues: Issue[]): OrientationMode {
   const normalized = value.trim().toLowerCase();
   if (normalized === "alternating" || normalized === "horizontal" || normalized === "vertical") return normalized;
   issues.push({ level: "warning", message: `Invalid orientation value "${value}", using alternating.` });
+  return "alternating";
+}
+
+function defaultOrientation(heights: number[]): OrientationMode {
+  if (heights.length === 1 && heights[0] === 8) return "horizontal";
   return "alternating";
 }
 

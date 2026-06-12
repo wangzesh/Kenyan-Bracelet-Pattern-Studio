@@ -41,7 +41,7 @@ Open `web/index.html` in a browser to edit `.bead` pattern text and render a det
 
 The preview can also be edited directly: select a palette swatch, then click a bead in the preview. The app updates both the rendered bead and the matching `pattern:` row in the text editor.
 
-The preview uses configurable oriented oval beads. Set `orientation: alternating` for the current 6/5 behavior where 6-bead columns render as vertical ovals and 5-bead columns render as horizontal ovals, or use `orientation: horizontal` / `orientation: vertical` for one consistent orientation.
+The preview uses configurable oriented oval beads. Set `orientation: alternating` for the current 6/5 behavior where 6-bead columns render as vertical ovals and 5-bead columns render as horizontal ovals. Constant `8` patterns default to horizontal orientation; use `orientation: horizontal` explicitly in maker-ready files.
 
 The `.bead` format is the preferred editable source:
 
@@ -102,8 +102,8 @@ See `ROADMAP.md` for planned improvements, including configurable bead orientati
 
 - `patterns/chicago-marathon-26_2.md`: Chicago colors, red star, `26.2`, red star, Chicago colors.
 - `patterns/chicago-marathon-26_2.bead`: editable source format for the local preview tool.
-- `patterns/chicago-marathon-chi_26-flag.bead`: 85-column, 6/5 alternating Chicago flag-inspired version with four red stars and `CHI.26`.
-- `patterns/toronto-marathon-tor-42-flag.bead`: constant-8 Toronto Marathon version with `TOR`, a Toronto flag center block, and `42`.
+- `patterns/chicago-marathon-chi_26-flag.bead`: constant-8 Chicago Marathon version with two stars, `CHI.26`, and two stars.
+- `patterns/toronto-marathon-tor-42-flag.bead`: constant-8 Toronto Marathon version with `TOR`, a wide Toronto flag block, and `42`.
 
 ## Notes
 

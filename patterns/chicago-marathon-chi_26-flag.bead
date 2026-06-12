@@ -1,98 +1,82 @@
 # bead-pattern v1
-title: Chicago Marathon CHI.26 Flag
-heights: 6,5
-align: top
-orientation: alternating
+title: Chicago Marathon CHI.26 Stars
+heights: 8
+align: center
+orientation: horizontal
 
 palette:
-C = #7ec8e3 Chicago flag light blue
 W = #f8fafc white field
+C = #7ec8e3 Chicago flag light blue
 R = #d22630 Chicago flag red star
-N = #0b1f4d navy text
+K = #111111 black text
 
 pattern:
-01 | C W W W W C | Chicago blue border field
-02 | C W W W C | Chicago blue border field
-03 | C W W W W C | Chicago blue border field
-04 | C W W W C | Chicago blue border field
-05 | C W W W W C | Chicago blue border field
-06 | C W W W C | Chicago blue border field
-07 | C W W W W C | Chicago blue border field
-08 | C W W W C | Chicago blue border field
-09 | C W W W W C | Chicago blue border field
-10 | C W W W C | Chicago blue border field
-11 | C W W W W C | Chicago blue border field
-12 | C W W W C | Chicago blue border field
-13 | C W W W W C | Chicago blue border field
-14 | C W W W C | Chicago blue border field
-15 | C W W W W C | Chicago blue border field
-16 | C W W W C | Chicago blue border field
-17 | C W W W W C | Chicago blue border field
-18 | C W W W C | Chicago blue border field
-19 | C W W R W C | red star 1 with blue border
-20 | C R R R C | red star 1 with blue border
-21 | C R R R R C | red star 1 with blue border
-22 | C R R R C | red star 1 with blue border
-23 | C W W R W C | red star 1 with blue border
-24 | C W W W C | star spacer with blue border
-25 | C W W R W C | red star 2 with blue border
-26 | C R R R C | red star 2 with blue border
-27 | C R R R R C | red star 2 with blue border
-28 | C R R R C | red star 2 with blue border
-29 | C W W R W C | red star 2 with blue border
-30 | W W W W W | text spacer
-31 | W W W W W W | text spacer
-32 | W W W W W | text spacer
-33 | N N N N N W | C column 1
-34 | N W W W N | C column 2
-35 | N W W W N W | C column 3
-36 | W W W W W | letter spacer
-37 | N N N N N W | H column 1
-38 | W W N W W | H column 2
-39 | N N N N N W | H column 3
-40 | W W W W W | letter spacer
-41 | N W W W N W | I column 1
-42 | N N N N N | I column 2
-43 | N W W W N W | I column 3
-44 | W W W W N | period
-45 | W W W W W W | number spacer
-46 | W W W W W | number spacer
-47 | N W N N N W | 2 column 1
-48 | N W N W N | 2 column 2
-49 | N N N W N W | 2 column 3
-50 | W W W W W | number spacer
-51 | N N N N N N | 6 column 1
-52 | N W N W N | 6 column 2
-53 | N W N N N W | 6 column 3
-54 | W W W W W | text spacer
-55 | W W W W W W | text spacer
-56 | W W W W W | text spacer
-57 | C W W R W C | red star 3 with blue border
-58 | C R R R C | red star 3 with blue border
-59 | C R R R R C | red star 3 with blue border
-60 | C R R R C | red star 3 with blue border
-61 | C W W R W C | red star 3 with blue border
-62 | C W W W C | star spacer with blue border
-63 | C W W R W C | red star 4 with blue border
-64 | C R R R C | red star 4 with blue border
-65 | C R R R R C | red star 4 with blue border
-66 | C R R R C | red star 4 with blue border
-67 | C W W R W C | red star 4 with blue border
-68 | C W W W C | Chicago blue border field
-69 | C W W W W C | Chicago blue border field
-70 | C W W W C | Chicago blue border field
-71 | C W W W W C | Chicago blue border field
-72 | C W W W C | Chicago blue border field
-73 | C W W W W C | Chicago blue border field
-74 | C W W W C | Chicago blue border field
-75 | C W W W W C | Chicago blue border field
-76 | C W W W C | Chicago blue border field
-77 | C W W W W C | Chicago blue border field
-78 | C W W W C | Chicago blue border field
-79 | C W W W W C | Chicago blue border field
-80 | C W W W C | Chicago blue border field
-81 | C W W W W C | Chicago blue border field
-82 | C W W W C | Chicago blue border field
-83 | C W W W W C | Chicago blue border field
-84 | C W W W C | Chicago blue border field
-85 | C W W W W C | Chicago blue border field
+01 | C W R W R W W C | left Chicago star 1
+02 | C W W W R W W C | left Chicago star 1
+03 | C W R R R R W C | left Chicago star 1
+04 | C R R R R R R C | left Chicago star 1
+05 | C W R R R R W C | left Chicago star 1
+06 | C W W W R W W C | left Chicago star 1
+07 | C W R W R W W C | left Chicago star 1
+08 | C W W W W W W C | star spacer
+09 | C W W W W W W C | star spacer
+10 | C W R W R W W C | left Chicago star 2
+11 | C W W W R W W C | left Chicago star 2
+12 | C W R R R R W C | left Chicago star 2
+13 | C R R R R R R C | left Chicago star 2
+14 | C W R R R R W C | left Chicago star 2
+15 | C W W W R W W C | left Chicago star 2
+16 | C W R W R W W C | left Chicago star 2
+17 | C W W W W W W C | star to text spacer
+18 | C W W W W W W C | star to text spacer
+19 | C W W W W W W C | star to text spacer
+20 | C W W W W W W C | star to text spacer
+21 | C K K K K K K C | C in CHI
+22 | C K W W W W K C | C in CHI
+23 | C K W W W W K C | C in CHI
+24 | C K W W W W K C | C in CHI
+25 | C K W W W W K C | C in CHI
+26 | C W W W W W W C | letter spacer
+27 | C K K K K K K C | H in CHI
+28 | C W W K K W W C | H in CHI
+29 | C W W K K W W C | H in CHI
+30 | C W W K K W W C | H in CHI
+31 | C K K K K K K C | H in CHI
+32 | C W W W W W W C | letter spacer
+33 | C K W W W W K C | I in CHI
+34 | C K K K K K K C | I in CHI
+35 | C K W W W W K C | I in CHI
+36 | C W W W W K K C | period in CHI.26
+37 | C W W W W K K C | period in CHI.26
+38 | C W W W W W W C | number spacer
+39 | C K W W K K K C | 2 in 26
+40 | C K W W K W K C | 2 in 26
+41 | C K W W K W K C | 2 in 26
+42 | C K W W K W K C | 2 in 26
+43 | C K K K K W K C | 2 in 26
+44 | C W W W W W W C | number spacer
+45 | C K K K K K K C | 6 in 26
+46 | C K W W K W K C | 6 in 26
+47 | C K W W K W K C | 6 in 26
+48 | C K W W K W K C | 6 in 26
+49 | C K W W K K K C | 6 in 26
+50 | C W W W W W W C | text to star spacer
+51 | C W W W W W W C | text to star spacer
+52 | C W W W W W W C | text to star spacer
+53 | C W W W W W W C | text to star spacer
+54 | C W R W R W W C | right Chicago star 1
+55 | C W W W R W W C | right Chicago star 1
+56 | C W R R R R W C | right Chicago star 1
+57 | C R R R R R R C | right Chicago star 1
+58 | C W R R R R W C | right Chicago star 1
+59 | C W W W R W W C | right Chicago star 1
+60 | C W R W R W W C | right Chicago star 1
+61 | C W W W W W W C | star spacer
+62 | C W W W W W W C | star spacer
+63 | C W R W R W W C | right Chicago star 2
+64 | C W W W R W W C | right Chicago star 2
+65 | C W R R R R W C | right Chicago star 2
+66 | C R R R R R R C | right Chicago star 2
+67 | C W R R R R W C | right Chicago star 2
+68 | C W W W R W W C | right Chicago star 2
+69 | C W R W R W W C | right Chicago star 2

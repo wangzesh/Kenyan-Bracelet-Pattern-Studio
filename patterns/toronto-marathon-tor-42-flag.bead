@@ -2,7 +2,7 @@
 title: Toronto Marathon TOR 42 Flag
 heights: 8
 align: center
-orientation: vertical
+orientation: horizontal
 
 palette:
 B = #274490 Toronto blue
@@ -10,45 +10,76 @@ W = #f8fafc white
 R = #f00 Toronto red
 
 pattern:
-01 | W B B B B B B B | TOR left edge
-02 | W B B B B B B B | TOR left edge
-03 | W W W W W W W W | TOR left edge
-04 | W B B B B B B B | TOR left edge
-05 | B W W W W W W B | TOR left edge
-06 | W B B B B B B W | TOR left edge
-07 | W B B B B B B W | TOR left edge
-08 | B W W W W W W B | TOR left edge
-09 | W W W W W W W W | O left edge
-10 | W B B W B B B B | O body
-11 | W B B W W B W B | O body
-12 | B W W B B W B W | O body
-13 | B B B B B B B B | R left edge
-14 | B B B B B B B B | R left edge
-15 | B B B B B B B B | R left edge
-16 | B B B B B B B B | R left edge
-17 | B B B B B B B B | R left edge
-18 | W W W W W W W W | spacer before flag
-19 | W W W W W W W W | flag blue border
-20 | W W W W W W W W | flag blue border
-21 | W W W R R W W W | flag leaf
-22 | W W R R R R W W | flag leaf
-23 | W W R R R R W W | flag leaf
-24 | W W R R R R W W | flag leaf
-25 | W W W R R W W W | flag leaf
-26 | W W W W W W W W | flag blue border
-27 | W W W W W W W W | flag blue border
-28 | W W W W W W W W | flag blue border
-29 | B B B B B B B B | spacer after flag
-30 | B B B B B B B B | spacer after flag
-31 | B B B B B B B B | spacer after flag
-32 | B B B B B B B B | spacer after flag
-33 | B B B B B B B B | spacer after flag
-34 | W W W W B B W W | 4 left edge
-35 | W B B W B B W W | 4 body
-36 | B B B W B B W W | 4 body
-37 | W W W W W W W W | 4 base
-38 | B B B B B B B B | spacer before 2
-39 | W W W W W W B B | 2 top
-40 | W B B W W B W W | 2 body
-41 | W B B B B W W W | 2 body
-42 | W W W W W W W W | 2 base
+01 | W B B B B B B B | T in TOR
+02 | W B B B B B B B | T in TOR
+03 | W W W W W W W W | T in TOR
+04 | W B B B B B B B | T in TOR
+05 | W B B B B B B B | T in TOR
+06 | B B B B B B B B | letter spacer
+07 | B W W W W W W B | O in TOR
+08 | W B B B B B B W | O in TOR
+09 | W B B B B B B W | O in TOR
+10 | W B B B B B B W | O in TOR
+11 | B W W W W W W B | O in TOR
+12 | B B B B B B B B | letter spacer
+13 | W W W W W W W W | R in TOR
+14 | W B B W B B B B | R in TOR
+15 | W B B W W B B B | R in TOR
+16 | W B B W B W W B | R in TOR
+17 | B W W B B B B W | R in TOR
+18 | B B B B B B B B | text to flag spacer
+19 | B B B B B B B B | text to flag spacer
+20 | B B B B B B B B | text to flag spacer
+21 | B B B B B B B B | text to flag spacer
+22 | B W W B B B B B | Toronto flag center block
+23 | B W W B B B B B | Toronto flag center block
+24 | B W W B B B B B | Toronto flag center block
+25 | B W W B B B B B | Toronto flag center block
+26 | B W W B B B B B | Toronto flag center block
+27 | B W W B B B B B | Toronto flag center block
+28 | B W W B B B B B | Toronto flag center block
+29 | B W W W W W B B | Toronto flag center block
+30 | B W W W W W B B | Toronto flag center block
+31 | B W W W W W B B | Toronto flag center block
+32 | B W W W W W W B | Toronto flag center block
+33 | B W W W W W W B | Toronto flag center block
+34 | B W W W W W W B | Toronto flag center block
+35 | B W W W W W W W | Toronto flag center block
+36 | B W B W W R R W | Toronto flag center block
+37 | B W B W W R R W | Toronto flag center block
+38 | B B B B R R R R | Toronto flag center block
+39 | B B B B R R R R | Toronto flag center block
+40 | B B B B R R R R | Toronto flag center block
+41 | B B B B R R R R | Toronto flag center block
+42 | B B B B R R R R | Toronto flag center block
+43 | B W B W W R R W | Toronto flag center block
+44 | B W B W W R R W | Toronto flag center block
+45 | B W W W W W W W | Toronto flag center block
+46 | B W W W W W W B | Toronto flag center block
+47 | B W W W W W W B | Toronto flag center block
+48 | B W W W W W W B | Toronto flag center block
+49 | B W W W W W B B | Toronto flag center block
+50 | B W W W W W B B | Toronto flag center block
+51 | B W W W W W B B | Toronto flag center block
+52 | B W W B B B B B | Toronto flag center block
+53 | B W W B B B B B | Toronto flag center block
+54 | B W W B B B B B | Toronto flag center block
+55 | B W W B B B B B | Toronto flag center block
+56 | B W W B B B B B | Toronto flag center block
+57 | B W W B B B B B | Toronto flag center block
+58 | B W W B B B B B | Toronto flag center block
+59 | B B B B B B B B | flag to number spacer
+60 | B B B B B B B B | flag to number spacer
+61 | B B B B B B B B | flag to number spacer
+62 | B B B B B B B B | flag to number spacer
+63 | B B W W B B B B | 4 in 42
+64 | B W B W B B B B | 4 in 42
+65 | W B B W B B B B | 4 in 42
+66 | W W W W W W W W | 4 in 42
+67 | B B B W B B B B | 4 in 42
+68 | B B B B B B B B | number spacer
+69 | B W B B B B W B | 2 in 42
+70 | W B B B B W W B | 2 in 42
+71 | W B B B W B W B | 2 in 42
+72 | W B B W B B W B | 2 in 42
+73 | B W W B B B W B | 2 in 42

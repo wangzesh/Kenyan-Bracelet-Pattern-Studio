@@ -26,7 +26,7 @@ Supported values:
 
 Default:
 
-- If `orientation:` is missing, default to `alternating`.
+- If `orientation:` is missing, constant `8` patterns default to `horizontal`; other patterns default to `alternating`.
 
 ### App Behavior
 

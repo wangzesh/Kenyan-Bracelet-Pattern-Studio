@@ -1,0 +1,75 @@
+# bead-pattern v1
+title: Chicago Marathon 26.2
+heights: 6,5
+align: center
+
+palette:
+W = #f8fafc White
+C = #7ec8e3 Chicago light blue
+R = #d22630 Red
+K = #111111 Black
+
+pattern:
+01 | W C W W C W | Chicago colors
+02 | C W W C W | Chicago colors
+03 | W C W W C W | Chicago colors
+04 | C W W C W | Chicago colors
+05 | W C W W C W | Chicago colors
+06 | C W W C W | Chicago colors
+07 | W C W W C W | Chicago colors
+08 | C W W C W | Chicago colors
+09 | W C W W C W | Chicago colors
+10 | C W W C W | Chicago colors
+11 | W C W W C W | Chicago colors
+12 | C W W C W | Chicago colors
+13 | W C W W C W | Chicago colors
+14 | C W W C W | Chicago colors
+15 | W C W W C W | Chicago colors
+16 | C W W C W | Chicago colors
+17 | W C W W C W | Chicago colors
+18 | C W W C W | Chicago colors
+19 | W W R W W W | red star
+20 | W R R R W | red star
+21 | R R R R R R | red star
+22 | W R R R W | red star
+23 | W W R W W W | red star
+24 | W W W W W | spacer
+25 | W W W W W W | spacer
+26 | K W K K K | 2 column 1
+27 | K W K W K W | 2 column 2
+28 | K K K W K | 2 column 3
+29 | W W W W W W | text spacer
+30 | K K K K K | 6 column 1
+31 | K W K W K W | 6 column 2
+32 | K W K K K | 6 column 3
+33 | W W W K K W | decimal point
+34 | W W W W W | text spacer
+35 | K W K K K W | 2 column 1
+36 | K W K W K | 2 column 2
+37 | K K K W K W | 2 column 3
+38 | W W W W W | spacer
+39 | W W W W W W | spacer
+40 | W W W W W | spacer
+41 | W W R W W W | red star
+42 | W R R R W | red star
+43 | R R R R R R | red star
+44 | W R R R W | red star
+45 | W W R W W W | red star
+46 | C W W C W | Chicago colors
+47 | W C W W C W | Chicago colors
+48 | C W W C W | Chicago colors
+49 | W C W W C W | Chicago colors
+50 | C W W C W | Chicago colors
+51 | W C W W C W | Chicago colors
+52 | C W W C W | Chicago colors
+53 | W C W W C W | Chicago colors
+54 | C W W C W | Chicago colors
+55 | W C W W C W | Chicago colors
+56 | C W W C W | Chicago colors
+57 | W C W W C W | Chicago colors
+58 | C W W C W | Chicago colors
+59 | W C W W C W | Chicago colors
+60 | C W W C W | Chicago colors
+61 | W C W W C W | Chicago colors
+62 | C W W C W | Chicago colors
+63 | W C W W C W | Chicago colors

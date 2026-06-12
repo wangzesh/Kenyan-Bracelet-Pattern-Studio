@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bracelet Pattern Studio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div class="title-block">
+          <h1>Bracelet Pattern Studio</h1>
+          <div id="patternTitle" class="subtitle">Untitled pattern</div>
+        </div>
+        <div class="actions" aria-label="File actions">
+          <button id="openPatternButton" type="button" title="Open a local .bead or .txt pattern file">Open .bead</button>
+          <input id="fileInput" class="hidden-input" type="file" accept=".bead,.txt,text/plain">
+          <button id="sampleButton" type="button" title="Load the built-in Chicago Marathon sample">Load sample</button>
+          <button id="copyButton" type="button" title="Copy the editable pattern text">Copy text</button>
+          <button id="downloadPatternButton" type="button" title="Save the editable pattern text">Save .bead</button>
+          <button id="downloadSvgButton" type="button" title="Save the rendered preview">Save SVG</button>
+        </div>
+      </header>
+
+      <section class="workspace">
+        <section class="editor-pane" aria-label="Pattern editor">
+          <div class="panel-header">
+            <h2>Pattern</h2>
+            <div class="controls">
+              <label>
+                Length (columns)
+                <input id="lengthInput" type="number" inputmode="numeric" min="1" step="1" autocomplete="off" value="63">
+              </label>
+              <label>
+                Band width pattern
+                <input id="heightsInput" type="text" inputmode="numeric" autocomplete="off" value="6,5">
+              </label>
+              <label>
+                Preview bead
+                <input id="beadSizeInput" type="range" min="8" max="28" value="16">
+              </label>
+              <label>
+                Preview gap
+                <input id="gapInput" type="range" min="0" max="8" value="2">
+              </label>
+              <label>
+                Align
+                <select id="alignInput">
+                  <option value="center">center</option>
+                  <option value="top">top</option>
+                  <option value="bottom">bottom</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <textarea id="patternInput" spellcheck="false" aria-label="Pattern text"></textarea>
+          <div class="editor-actions">
+            <button id="addColumnButton" type="button">Add column</button>
+            <button id="removeColumnButton" type="button">Remove last</button>
+          </div>
+        </section>
+
+        <section class="preview-pane" aria-label="Pattern preview">
+          <div class="panel-header preview-header">
+            <h2>Preview</h2>
+            <div id="stats" class="stats">0 columns</div>
+          </div>
+          <div class="preview-scroll">
+            <svg id="previewSvg" role="img" aria-label="Bracelet bead preview"></svg>
+          </div>
+          <div id="legend" class="legend" aria-label="Color legend"></div>
+          <section class="validation" aria-label="Validation">
+            <h2>Validation</h2>
+            <ul id="issues"></ul>
+          </section>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+# bead-pattern v1
+title: Photo Bead Inventory Palette
+heights: 6,5
+align: center
+
+palette:
+R1 = #d71920 bright red
+R2 = #8f1117 dark red
+R3 = rgba(215,25,32,0.55) translucent red
+B1 = #174ea6 royal blue
+B2 = #7ec8e3 light blue
+B3 = #9eddf2 sky blue
+B4 = #0b1f4d dark navy blue
+B5 = rgba(23,78,166,0.55) translucent blue
+G1 = #19a64a bright green
+G2 = #0b5d2a dark green
+G3 = #6f7f2a olive green
+G4 = rgba(25,166,74,0.55) translucent green
+Y1 = #ffd51f bright yellow
+Y2 = #d99a00 golden yellow
+O1 = #f57c00 bright orange
+O2 = #d94b1a reddish orange
+W1 = #f8fafc opaque white
+W2 = #f3ead8 off white cream
+K1 = #111111 opaque black
+K2 = #1c1712 very dark brown black
+BR1 = #3b2416 dark brown
+BR2 = #a05a1f amber brown
+BR3 = rgba(160,90,31,0.55) translucent brown
+CL1 = rgba(255,255,255,0.28) clear glass
+CL2 = rgba(115,125,135,0.32) smoky transparent
+S1 = #b8c0c8 light gray
+S2 = #9ca3af metallic silver gray
+P1 = #4b1d78 dark purple
+P2 = #6048a8 violet blue purple
+PK1 = #f7b7cd pale pink
+PK2 = #f0528d bright pink
+TN1 = #ead8b8 cream beige
+TN2 = #c8a46f light tan
+TQ1 = #00a6a6 turquoise blue green
+TQ2 = #78d6d1 light teal
+
+pattern:
+01 | R1 R2 R3 W1 W1 W1 | red samples
+02 | B1 B2 B3 B4 B5 | blue samples
+03 | G1 G2 G3 G4 W1 W1 | green samples
+04 | Y1 Y2 O1 O2 W1 | yellow orange samples
+05 | W1 W2 K1 K2 BR1 BR2 | neutral samples
+06 | BR3 CL1 CL2 S1 S2 | clear gray samples
+07 | P1 P2 PK1 PK2 TN1 TN2 | purple pink tan samples
+08 | TQ1 TQ2 W1 W2 K1 | teal samples

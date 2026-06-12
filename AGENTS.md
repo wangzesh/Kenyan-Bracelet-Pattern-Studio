@@ -10,6 +10,7 @@ Read `README.md` before editing this project.
 - Every column must follow the declared band-width rule exactly.
 - Do not add visual border rows outside the declared bead height.
 - If black rim or contrast is used, count it inside each column's declared bead height.
+- Bracelet length is flexible unless the user gives a target. Prioritize readable motifs over minimizing column count.
 - After editing a pattern, verify every column count and state the verification result.
 
 ## Chicago Marathon Rules

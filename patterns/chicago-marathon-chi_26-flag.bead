@@ -12,71 +12,77 @@ K = #111111 black text
 
 pattern:
 01 | C W R W R W W C | left Chicago star 1
-02 | C W W W R W W C | left Chicago star 1
-03 | C W R R R R W C | left Chicago star 1
+02 | C W W R R R W C | left Chicago star 1
+03 | C W W R R R W C | left Chicago star 1
 04 | C R R R R R R C | left Chicago star 1
-05 | C W R R R R W C | left Chicago star 1
-06 | C W W W R W W C | left Chicago star 1
+05 | C W W R R R W C | left Chicago star 1
+06 | C W W R R R W C | left Chicago star 1
 07 | C W R W R W W C | left Chicago star 1
 08 | C W W W W W W C | star spacer
 09 | C W W W W W W C | star spacer
 10 | C W R W R W W C | left Chicago star 2
-11 | C W W W R W W C | left Chicago star 2
-12 | C W R R R R W C | left Chicago star 2
+11 | C W W R R R W C | left Chicago star 2
+12 | C W W R R R W C | left Chicago star 2
 13 | C R R R R R R C | left Chicago star 2
-14 | C W R R R R W C | left Chicago star 2
-15 | C W W W R W W C | left Chicago star 2
+14 | C W W R R R W C | left Chicago star 2
+15 | C W W R R R W C | left Chicago star 2
 16 | C W R W R W W C | left Chicago star 2
 17 | C W W W W W W C | star to text spacer
 18 | C W W W W W W C | star to text spacer
 19 | C W W W W W W C | star to text spacer
 20 | C W W W W W W C | star to text spacer
 21 | C K K K K K K C | C in CHI
-22 | C K W W W W K C | C in CHI
+22 | C K K K K K K C | C in CHI
 23 | C K W W W W K C | C in CHI
 24 | C K W W W W K C | C in CHI
 25 | C K W W W W K C | C in CHI
-26 | C W W W W W W C | letter spacer
-27 | C K K K K K K C | H in CHI
-28 | C W W K K W W C | H in CHI
-29 | C W W K K W W C | H in CHI
+26 | C K W W W W K C | C in CHI
+27 | C W W W W W W C | letter spacer
+28 | C K K K K K K C | H in CHI
+29 | C K K K K K K C | H in CHI
 30 | C W W K K W W C | H in CHI
-31 | C K K K K K K C | H in CHI
-32 | C W W W W W W C | letter spacer
-33 | C K W W W W K C | I in CHI
-34 | C K K K K K K C | I in CHI
+31 | C W W K K W W C | H in CHI
+32 | C K K K K K K C | H in CHI
+33 | C K K K K K K C | H in CHI
+34 | C W W W W W W C | letter spacer
 35 | C K W W W W K C | I in CHI
-36 | C W W W W K K C | period in CHI.26
-37 | C W W W W K K C | period in CHI.26
-38 | C W W W W W W C | number spacer
-39 | C K W W K K K C | 2 in 26
-40 | C K W W K W K C | 2 in 26
-41 | C K W W K W K C | 2 in 26
-42 | C K W W K W K C | 2 in 26
-43 | C K K K K W K C | 2 in 26
-44 | C W W W W W W C | number spacer
-45 | C K K K K K K C | 6 in 26
-46 | C K W W K W K C | 6 in 26
-47 | C K W W K W K C | 6 in 26
-48 | C K W W K W K C | 6 in 26
-49 | C K W W K K K C | 6 in 26
-50 | C W W W W W W C | text to star spacer
-51 | C W W W W W W C | text to star spacer
-52 | C W W W W W W C | text to star spacer
-53 | C W W W W W W C | text to star spacer
-54 | C W R W R W W C | right Chicago star 1
-55 | C W W W R W W C | right Chicago star 1
-56 | C W R R R R W C | right Chicago star 1
-57 | C R R R R R R C | right Chicago star 1
-58 | C W R R R R W C | right Chicago star 1
-59 | C W W W R W W C | right Chicago star 1
+36 | C K K K K K K C | I in CHI
+37 | C K K K K K K C | I in CHI
+38 | C K W W W W K C | I in CHI
+39 | C W W W W W W C | space before period
+40 | C W W W W K K C | period in CHI.26
+41 | C W W W W K K C | period in CHI.26
+42 | C W W W W W W C | space after period
+43 | C K W W K K K C | 2 in 26
+44 | C K W W K K K C | 2 in 26
+45 | C K W W K W K C | 2 in 26
+46 | C K W W K W K C | 2 in 26
+47 | C K K K K W K C | 2 in 26
+48 | C K K K K W K C | 2 in 26
+49 | C W W W W W W C | number spacer
+50 | C K K K K K K C | 6 in 26
+51 | C K K K K K K C | 6 in 26
+52 | C K W W K W K C | 6 in 26
+53 | C K W W K W K C | 6 in 26
+54 | C K W W K K K C | 6 in 26
+55 | C K W W K K K C | 6 in 26
+56 | C W W W W W W C | text to star spacer
+57 | C W W W W W W C | text to star spacer
+58 | C W W W W W W C | text to star spacer
+59 | C W W W W W W C | text to star spacer
 60 | C W R W R W W C | right Chicago star 1
-61 | C W W W W W W C | star spacer
-62 | C W W W W W W C | star spacer
-63 | C W R W R W W C | right Chicago star 2
-64 | C W W W R W W C | right Chicago star 2
-65 | C W R R R R W C | right Chicago star 2
-66 | C R R R R R R C | right Chicago star 2
-67 | C W R R R R W C | right Chicago star 2
-68 | C W W W R W W C | right Chicago star 2
+61 | C W W R R R W C | right Chicago star 1
+62 | C W W R R R W C | right Chicago star 1
+63 | C R R R R R R C | right Chicago star 1
+64 | C W W R R R W C | right Chicago star 1
+65 | C W W R R R W C | right Chicago star 1
+66 | C W R W R W W C | right Chicago star 1
+67 | C W W W W W W C | star spacer
+68 | C W W W W W W C | star spacer
 69 | C W R W R W W C | right Chicago star 2
+70 | C W W R R R W C | right Chicago star 2
+71 | C W W R R R W C | right Chicago star 2
+72 | C R R R R R R C | right Chicago star 2
+73 | C W W R R R W C | right Chicago star 2
+74 | C W W R R R W C | right Chicago star 2
+75 | C W R W R W W C | right Chicago star 2

@@ -14,6 +14,7 @@ Design narrow bracelet patterns that can be counted and reproduced column by col
 - Every column must follow the declared band-width rule exactly.
 - No extra border rows. If a rim is used, it must be part of the declared bead height.
 - Every column must explicitly list its beads. The column list is the source of truth.
+- Bracelet length is flexible unless a maker gives a target. Use as many columns as needed to make the design readable.
 - Do not use image generation as the final pattern format. Rendered previews are optional only after the deterministic grid exists.
 - Chicago Marathon patterns must avoid Canada, Toronto, CN Tower, maple leaf, and American flag motifs.
 - For marathon distance text, use `26.2`, not `42 km`.
@@ -103,7 +104,7 @@ See `ROADMAP.md` for planned improvements, including configurable bead orientati
 - `patterns/chicago-marathon-26_2.md`: Chicago colors, red star, `26.2`, red star, Chicago colors.
 - `patterns/chicago-marathon-26_2.bead`: editable source format for the local preview tool.
 - `patterns/chicago-marathon-chi_26-flag.bead`: constant-8 Chicago Marathon version with two stars, `CHI.26`, and two stars.
-- `patterns/toronto-marathon-tor-42-flag.bead`: constant-8 Toronto Marathon version with `TOR`, a wide Toronto flag block, and `42`.
+- `patterns/toronto-marathon-tor-42-flag.bead`: constant-8 Toronto Marathon version with red `TOR`, an abstract Toronto flag block, and red `42`.
 
 ## Notes
 

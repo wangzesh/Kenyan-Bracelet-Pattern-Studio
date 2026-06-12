@@ -37,17 +37,18 @@ Design narrow bracelet patterns that can be counted and reproduced column by col
 
 ## Local Preview Tool
 
-Open `web/index.html` in a browser to edit `.bead` pattern text and render a deterministic preview. The app is local-only and does not require a server or AI interpretation.
+Open `web/index.html` in a browser to edit `.bead` pattern text and render a deterministic preview. The app is local-only and does not require a server or AI interpretation. The hosted page includes its own usage guide for end users.
 
 The preview can also be edited directly: select a palette swatch, then click a bead in the preview. The app updates both the rendered bead and the matching `pattern:` row in the text editor.
 
-The preview uses oriented oval beads for 6/5 bracelets: 6-bead columns render as vertical ovals, and 5-bead columns render as horizontal ovals.
+The preview uses configurable oriented oval beads. Set `orientation: alternating` for the current 6/5 behavior where 6-bead columns render as vertical ovals and 5-bead columns render as horizontal ovals, or use `orientation: horizontal` / `orientation: vertical` for one consistent orientation.
 
 The `.bead` format is the preferred editable source:
 
 ```text
 title: Chicago Marathon 26.2
 heights: 6,5
+orientation: alternating
 
 palette:
 W = #f8fafc White

@@ -2,6 +2,7 @@
 title: Photo Bead Inventory Palette
 heights: 6,5
 align: center
+orientation: alternating
 
 palette:
 R1 = #d71920 bright red

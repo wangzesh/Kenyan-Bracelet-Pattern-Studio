@@ -1,4 +1,5 @@
 type AlignMode = "top" | "center" | "bottom";
+type OrientationMode = "alternating" | "horizontal" | "vertical";
 type IssueLevel = "error" | "warning" | "ok";
 type SectionName = "meta" | "palette" | "pattern";
 
@@ -25,6 +26,7 @@ interface ParsedPattern {
   title: string;
   heights: number[];
   align: AlignMode;
+  orientation: OrientationMode;
   palette: PaletteEntry[];
   paletteMap: Map<string, PaletteEntry>;
   columns: ColumnEntry[];
@@ -35,6 +37,7 @@ const DEFAULT_PATTERN = `# bead-pattern v1
 title: Chicago Marathon 26.2
 heights: 6,5
 align: center
+orientation: alternating
 
 palette:
 W = #f8fafc White
@@ -157,6 +160,7 @@ const heightsInput = byId<HTMLInputElement>("heightsInput");
 const beadSizeInput = byId<HTMLInputElement>("beadSizeInput");
 const gapInput = byId<HTMLInputElement>("gapInput");
 const alignInput = byId<HTMLSelectElement>("alignInput");
+const orientationInput = byId<HTMLSelectElement>("orientationInput");
 const patternTitle = byId<HTMLElement>("patternTitle");
 const stats = byId<HTMLElement>("stats");
 const previewSvg = byId<SVGSVGElement>("previewSvg");
@@ -218,6 +222,11 @@ heightsInput.addEventListener("change", () => {
 
 alignInput.addEventListener("change", () => {
   patternInput.value = setMeta(patternInput.value, "align", alignInput.value);
+  render();
+});
+
+orientationInput.addEventListener("change", () => {
+  patternInput.value = setMeta(patternInput.value, "orientation", orientationInput.value);
   render();
 });
 
@@ -287,6 +296,7 @@ function parsePattern(text: string): ParsedPattern {
 
   const heights = parseHeights(meta.get("heights") || meta.get("height") || "6,5", issues);
   const align = parseAlign(meta.get("align") || "center", issues);
+  const orientation = parseOrientation(meta.get("orientation") || "alternating", issues);
 
   if (palette.length === 0) {
     issues.push({ level: "error", message: "Palette is empty." });
@@ -326,6 +336,7 @@ function parsePattern(text: string): ParsedPattern {
     title: meta.get("title") || "Untitled pattern",
     heights,
     align,
+    orientation,
     palette,
     paletteMap,
     columns,
@@ -430,6 +441,13 @@ function parseAlign(value: string, issues: Issue[]): AlignMode {
   return "center";
 }
 
+function parseOrientation(value: string, issues: Issue[]): OrientationMode {
+  const normalized = value.trim().toLowerCase();
+  if (normalized === "alternating" || normalized === "horizontal" || normalized === "vertical") return normalized;
+  issues.push({ level: "warning", message: `Invalid orientation value "${value}", using alternating.` });
+  return "alternating";
+}
+
 function expectedHeight(heights: number[], columnIndex: number): number {
   return heights[(columnIndex - 1) % heights.length];
 }
@@ -453,6 +471,9 @@ function syncControls(parsed: ParsedPattern): void {
   }
   if (document.activeElement !== alignInput) {
     alignInput.value = parsed.align;
+  }
+  if (document.activeElement !== orientationInput) {
+    orientationInput.value = parsed.orientation;
   }
 }
 
@@ -519,7 +540,7 @@ function renderSvg(parsed: ParsedPattern): void {
 
   parsed.columns.forEach((column, columnOffset) => {
     const yOffset = columnYOffset(parsed.align, maxHeight, column.beads.length, pitchY);
-    const radii = beadRadii(beadSize, column.beads.length);
+    const radii = beadRadii(beadSize, column.beads.length, parsed.orientation);
     column.beads.forEach((symbol, beadOffset) => {
       const entry = parsed.paletteMap.get(symbol);
       const bead = document.createElementNS(SVG_NS, "ellipse");
@@ -563,7 +584,13 @@ function renderSvg(parsed: ParsedPattern): void {
   });
 }
 
-function beadRadii(beadSize: number, columnHeight: number): { rx: number; ry: number } {
+function beadRadii(beadSize: number, columnHeight: number, orientation: OrientationMode): { rx: number; ry: number } {
+  if (orientation === "vertical") {
+    return { rx: beadSize * 0.42, ry: beadSize * 0.56 };
+  }
+  if (orientation === "horizontal") {
+    return { rx: beadSize * 0.56, ry: beadSize * 0.42 };
+  }
   if (columnHeight === 6) {
     return { rx: beadSize * 0.42, ry: beadSize * 0.56 };
   }

@@ -4,7 +4,7 @@ Planned improvements for the bracelet pattern studio.
 
 ## 1. Bead Orientation Metadata
 
-The app should support configurable bead orientation in previews.
+Status: implemented in the web app.
 
 ### User Need
 

@@ -60,7 +60,7 @@ textarea:focus-visible,
 .shell {
   min-height: 100vh;
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-rows: auto auto 1fr;
 }
 
 .topbar {
@@ -107,6 +107,39 @@ h2 {
   flex-wrap: wrap;
   gap: 8px;
   align-items: center;
+}
+
+.howto {
+  display: grid;
+  gap: 8px;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface-2);
+}
+
+.howto h2 {
+  font-size: 14px;
+}
+
+.howto ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.howto li,
+.howto p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.howto code {
+  color: var(--text);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
 }
 
 .file-button {
@@ -179,6 +212,10 @@ h2 {
   padding: 5px 8px;
   background: var(--surface-2);
   color: var(--text);
+}
+
+#orientationInput {
+  width: 118px;
 }
 
 .controls input[type="range"] {
@@ -314,6 +351,10 @@ svg {
 @media (max-width: 560px) {
   .workspace {
     padding: 10px;
+  }
+
+  .howto {
+    padding: 12px 10px;
   }
 
   .panel-header {

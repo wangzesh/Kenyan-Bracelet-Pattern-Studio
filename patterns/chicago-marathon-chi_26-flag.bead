@@ -2,6 +2,7 @@
 title: Chicago Marathon CHI.26 Flag
 heights: 6,5
 align: top
+orientation: alternating
 
 palette:
 C = #7ec8e3 Chicago flag light blue

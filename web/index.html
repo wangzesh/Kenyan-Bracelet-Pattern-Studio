@@ -24,6 +24,17 @@
         </div>
       </header>
 
+      <section class="howto" aria-labelledby="howtoTitle">
+        <h2 id="howtoTitle">How to use this page</h2>
+        <ol>
+          <li>Open a local <code>.bead</code> or <code>.txt</code> pattern, or load the sample.</li>
+          <li>Edit the pattern text, or select a color swatch and click beads in the preview to paint them.</li>
+          <li>Use Length, Band width pattern, Align, and Orientation to update the pattern metadata.</li>
+          <li>Save <code>.bead</code> to download the editable pattern text. Save SVG to download the current preview.</li>
+        </ol>
+        <p>Everything runs in your browser. GitHub Pages does not store uploaded files, and the page cannot overwrite a local file you opened.</p>
+      </section>
+
       <section class="workspace">
         <section class="editor-pane" aria-label="Pattern editor">
           <div class="panel-header">
@@ -51,6 +62,14 @@
                   <option value="center">center</option>
                   <option value="top">top</option>
                   <option value="bottom">bottom</option>
+                </select>
+              </label>
+              <label>
+                Orientation
+                <select id="orientationInput">
+                  <option value="alternating">alternating</option>
+                  <option value="horizontal">horizontal</option>
+                  <option value="vertical">vertical</option>
                 </select>
               </label>
             </div>

@@ -2,6 +2,7 @@
 title: Chicago Marathon 26.2
 heights: 6,5
 align: center
+orientation: alternating
 
 palette:
 W = #f8fafc White
